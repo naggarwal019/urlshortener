@@ -1,0 +1,15 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input CreateURLDto {
+  longUrl: String!
+}
+
+type Mutation {
+  shortenUrl(data: CreateURLDto!): String!
+}
+
+type Query {
+  findToRedirect(url: String!): String!
+}
